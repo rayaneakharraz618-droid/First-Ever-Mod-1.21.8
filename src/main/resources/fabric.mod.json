@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "testing",
+	"version": "${version}",
+	"name": "Testing",
+	"description": "Testing Mod By Galaxy. ",
+	"authors": [
+		"Galaxy"
+	],
+	"license": "CC0-1.0",
+	"icon": "assets/testing/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.galaxy.testing.Testing"
+		],
+		"fabric-datagen": [
+			"net.galaxy.testing.TestingDataGenerator"
+		],
+        "client": [
+            "net.galaxy.testing.TestingClient"
+        ]
+	},
+	"mixins": [
+		"testing.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
