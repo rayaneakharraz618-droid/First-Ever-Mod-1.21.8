@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    [
+      "minecraft:pale_oak_planks"
+    ],
+    [
+      "stick"
+    ]
+  ],
+  "result": {
+    "count": 4,
+    "id": "testing:pale_stick"
+  }
+}

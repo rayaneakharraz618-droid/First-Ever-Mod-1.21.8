@@ -1,0 +1,5 @@
+{
+  "type": "minecraft:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": ["testing:ruby_ore"]
+}
