@@ -3,5 +3,16 @@
   "item.testing.ruby_pickaxe": "Ruby Pickaxe",
   "block.testing.ruby_ore": "Ruby Ore",
   "item.testing.ruby_sword": "Ruby Sword",
-  "item.testing.pale_stick": "Pale Stick"
+  "item.testing.pale_stick": "Pale Stick",
+  "item.testing.ruby_stick": "Ruby Stick",
+  "item.testing.ruby_shovel": "Ruby Shovel",
+  "item.testing.ruby_axe": "Ruby Axe",
+  "item.testing.ruby_helmet": "Ruby Helmet",
+  "item.testing.ruby_chestplate": "Ruby Chestplate",
+  "item.testing.ruby_leggings": "Ruby Leggings",
+  "item.testing.ruby_boots": "Ruby Boots",
+  "block.testing.cryptonite_ore": "Cryptonite Ore",
+  "item.testing.cryptonite": "Cryptonite",
+  "item.testing.cryptonite_part": "Cryptonite Part",
+  "item.testing.cryptonite_pickaxe": "Cryptonite Pickaxe"
 }

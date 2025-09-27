@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.galaxy.testing.block.ModBlocks;
+import net.galaxy.testing.events.ModEvents;
 import net.galaxy.testing.item.ModItems;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -17,13 +18,21 @@ import org.slf4j.LoggerFactory;
 public class Testing implements ModInitializer {
 	public static final String MOD_ID = "testing";
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
-    public static final RegistryKey<PlacedFeature> CUSTOM_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, Identifier.of("testing","ruby_ore"));
+    public static final RegistryKey<PlacedFeature> RUBY_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, Identifier.of("testing","ruby_ore"));
+    public static final RegistryKey<PlacedFeature> CRYPTONITE_ORE_PLACED_KEY = RegistryKey.of(RegistryKeys.PLACED_FEATURE, Identifier.of("testing","cryptonite_ore"));
 
 	@Override
 	public void onInitialize() {
-        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, CUSTOM_ORE_PLACED_KEY);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, RUBY_ORE_PLACED_KEY);
+        BiomeModifications.addFeature(
+                BiomeSelectors.foundInTheEnd(),
+                GenerationStep.Feature.UNDERGROUND_ORES,
+                CRYPTONITE_ORE_PLACED_KEY
+        );
+
 
         ModItems.registerModItems();
         ModBlocks.registerModItems();
+        ModEvents.register();
 	}
 }

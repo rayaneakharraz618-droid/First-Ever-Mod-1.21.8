@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "testing:ruby_ore"
+    "testing:ruby_ore",
+    "testing:cryptonite_ore"
   ]
 }

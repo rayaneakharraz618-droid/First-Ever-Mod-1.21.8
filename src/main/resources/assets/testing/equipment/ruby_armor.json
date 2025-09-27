@@ -1,0 +1,14 @@
+{
+  "layers": {
+    "humanoid": [
+      {
+        "texture": "testing:ruby_armor"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "testing:ruby_armor"
+      }
+    ]
+  }
+}

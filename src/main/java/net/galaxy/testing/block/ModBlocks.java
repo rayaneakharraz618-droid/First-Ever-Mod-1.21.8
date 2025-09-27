@@ -18,7 +18,14 @@ public class ModBlocks {
     public static final Block RUBY_ORE = register(
             "ruby_ore",
             Block::new,
-            AbstractBlock.Settings.create().sounds(BlockSoundGroup.DEEPSLATE).requiresTool().hardness(1f),
+            AbstractBlock.Settings.create().sounds(BlockSoundGroup.DEEPSLATE).requiresTool().hardness(1.5f),
+            true
+    );
+
+    public static final Block CRYPTONITE_ORE = register(
+            "cryptonite_ore",
+            Block::new,
+            AbstractBlock.Settings.create().sounds(BlockSoundGroup.STONE).requiresTool().hardness(1f),
             true
     );
 
@@ -55,6 +62,7 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(entries -> {
             entries.add(RUBY_ORE);
+            entries.add(CRYPTONITE_ORE);
         });
 
     }

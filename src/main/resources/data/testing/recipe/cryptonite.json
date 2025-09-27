@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "X": "testing:cryptonite_part",
+    "#": "minecraft:netherite_ingot",
+    "C": "testing:ruby"
+  },
+  "pattern": [
+    "CXC",
+    "X#X",
+    "CXC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "testing:cryptonite"
+  }
+}

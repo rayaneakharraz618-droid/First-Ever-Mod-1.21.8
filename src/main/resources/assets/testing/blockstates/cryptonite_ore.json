@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "testing:block/cryptonite_ore" }
+  }
+}
